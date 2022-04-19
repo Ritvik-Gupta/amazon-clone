@@ -9,8 +9,6 @@ const Home = () => {
 
 	useEffect(() => {
 		;(async () => {
-			window.db = database
-
 			const data = await database.collection("products").get()
 			setProducts(prevProducts => [
 				...prevProducts,

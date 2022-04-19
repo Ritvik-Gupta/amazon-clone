@@ -1,4 +1,5 @@
 import React, { useEffect } from "react"
+import { TransitionLayout } from "../components/transition-layout"
 import "../styles/globals.css"
 import { auth } from "../utils/firebase-config"
 import { initialState, reducer } from "../utils/reducer"
@@ -40,7 +41,11 @@ const MyComponent = ({ Component, pageProps }) => {
 
 	console.log("USER IS >>>>>", user)
 
-	return <Component {...pageProps} />
+	return (
+		<TransitionLayout>
+			<Component {...pageProps} />
+		</TransitionLayout>
+	)
 }
 
 export default MyApp

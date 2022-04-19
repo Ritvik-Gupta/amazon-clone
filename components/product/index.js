@@ -1,7 +1,7 @@
 import Rating from "@material-ui/lab/Rating"
 import React from "react"
-import styles from "../styles/product.module.css"
-import { useStateValue } from "../utils/state-provider"
+import styles from "./styles.module.css"
+import { useStateValue } from "../../utils/state-provider"
 
 export const Product = ({ id, title, price, rating, image }) => {
 	const [{}, dispatch] = useStateValue()

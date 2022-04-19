@@ -1,8 +1,8 @@
 import React from "react"
 import CurrencyFormat from "react-currency-format"
-import styles from "../styles/subtotal.module.css"
-import { getBasketTotal } from "../utils"
-import { useStateValue } from "../utils/state-provider"
+import { getBasketTotal } from "../../utils"
+import { useStateValue } from "../../utils/state-provider"
+import styles from "./styles.module.css"
 
 export const Subtotal = () => {
 	const [{ basket }, dispatch] = useStateValue()

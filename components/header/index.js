@@ -3,9 +3,9 @@ import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import React from "react"
-import styles from "../styles/header.module.css"
-import { auth } from "../utils/firebase-config"
-import { useStateValue } from "../utils/state-provider"
+import styles from "./styles.module.css"
+import { auth } from "../../utils/firebase-config"
+import { useStateValue } from "../../utils/state-provider"
 
 export const Header = () => {
 	const [{ basket, user }] = useStateValue()
