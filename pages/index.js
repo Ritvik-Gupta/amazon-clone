@@ -21,11 +21,11 @@ const Home = () => {
 		<>
 			<Header />
 			<div className={styles.home}>
-				<img className={styles.home__image} src='/banner.jpg' alt='' />
+				<img className={styles.image} src='/banner.jpg' alt='' />
 
 				{/*product id, title, price, rating */}
 
-				<div className={styles.home__row}>
+				<div className={styles.row}>
 					{products.map(item => {
 						return (
 							<Product

@@ -9,7 +9,7 @@ const Checkout = () => {
 
 	return (
 		<div className={styles.checkout}>
-			<div className={styles.checkout__left}>
+			<div className={styles.left}>
 				{basket?.length === 0 ? (
 					<div>
 						<h2>Your shopping basket is empty</h2>
@@ -20,7 +20,7 @@ const Checkout = () => {
 					</div>
 				) : (
 					<div>
-						<h2 className={styles.checkout__title}>Your shopping basket</h2>
+						<h2 className={styles.title}>Your shopping basket</h2>
 						{basket.map(item => {
 							console.log(item)
 							return (
@@ -37,7 +37,7 @@ const Checkout = () => {
 				)}
 			</div>
 			{basket?.length > 0 && (
-				<div className={styles.checkout__right}>
+				<div className={styles.right}>
 					<Subtotal />
 				</div>
 			)}

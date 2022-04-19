@@ -1,7 +1,7 @@
 import Rating from "@material-ui/lab/Rating"
 import React from "react"
-import styles from "./styles.module.css"
 import { useStateValue } from "../../utils/state-provider"
+import styles from "./styles.module.css"
 
 export const Product = ({ id, title, price, rating, image }) => {
 	const [{}, dispatch] = useStateValue()
@@ -21,13 +21,13 @@ export const Product = ({ id, title, price, rating, image }) => {
 
 	return (
 		<div className={styles.product}>
-			<div className={styles.product__info}>
+			<div className={styles.info}>
 				<p>{title}</p>
-				<p className={styles.product__price}>
+				<p className={styles.price}>
 					<small>$</small>
 					<strong>{price}</strong>
 				</p>
-				<div className={styles.product__rating}>
+				<div className={styles.rating}>
 					<Rating readOnly precision={0.5} defaultValue={rating} name='half-rating-read' />
 				</div>
 			</div>

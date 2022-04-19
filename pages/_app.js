@@ -39,8 +39,6 @@ const MyComponent = ({ Component, pageProps }) => {
 		}
 	}, [])
 
-	console.log("USER IS >>>>>", user)
-
 	return (
 		<TransitionLayout>
 			<Component {...pageProps} />

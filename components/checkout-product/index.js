@@ -14,16 +14,16 @@ export const CheckoutProduct = ({ id, image, title, price, rating }) => {
 	}
 
 	return (
-		<div className={styles.checkoutProduct}>
+		<div className={styles.checkout_product}>
 			<img src={image} alt='' />
-			<div className={styles.checkoutProduct__info}>
-				<p className={styles.checkoutProduct__title}>{title}</p>
-				<p className={styles.checkoutProduct__price}>
+			<div className={styles.info}>
+				<p className={styles.title}>{title}</p>
+				<p className={styles.price}>
 					<small>$</small>
 					<strong>{price}</strong>
 				</p>
 
-				<div className={styles.checkoutProduct__rating}>
+				<div className={styles.rating}>
 					<Rating readOnly precision={0.5} defaultValue={rating} name='half-rating-read' />
 				</div>
 				<button onClick={removeFromBasket}>Remove from basket</button>

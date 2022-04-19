@@ -28,7 +28,7 @@ export const Subtotal = () => {
 				prefix={"$"}
 			/>
 
-			<button>Proceed to checkout</button>
+			<button>Proceed to Checkout</button>
 		</div>
 	)
 }

@@ -6,7 +6,7 @@
 	align-items: center;
 }
 
-.login__container {
+.container {
 	width: 300px;
 	margin: 0px auto;
 	display: flex;
@@ -15,33 +15,33 @@
 	border: 1px solid lightgray;
 }
 
-.login__container > h1 {
+.container > h1 {
 	font-weight: 500;
 	margin-bottom: 20px;
 }
 
-.login__container > form > h5 {
+.container > form > h5 {
 	margin-bottom: 5px;
 }
 
-.login__container > form > input {
+.container > form > input {
 	height: 30px;
 	width: 98%;
 	background-color: white;
 	margin-bottom: 10px;
 }
 
-.login__container > form > p {
+.container > form > p {
 	margin-top: 15px;
 	font-size: 12px;
 }
-.login__logo {
+.logo {
 	width: 100px;
 	object-fit: contain;
 	margin: 20px 0px;
 }
 
-.login__signInBtn {
+.signInBtn {
 	width: 100%;
 	background: #f0c14b;
 	border: 1px solid;
@@ -51,7 +51,7 @@
 	color: #111;
 }
 
-.login__registerBtn {
+.registerBtn {
 	width: 100%;
 	background: lightgrey;
 	border: 1px solid;

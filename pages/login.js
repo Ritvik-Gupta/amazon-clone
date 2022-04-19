@@ -44,10 +44,10 @@ const Login = () => {
 				<img
 					src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png'
 					alt=''
-					className={styles.login__logo}
+					className={styles.logo}
 				/>
 			</Link>
-			<div className={styles.login__container}>
+			<div className={styles.container}>
 				<h1>Sign in</h1>
 				<form>
 					<h5>Email:</h5>
@@ -60,14 +60,14 @@ const Login = () => {
 						type='password'
 					/>
 
-					<button type='submit' onClick={signIn} className={styles.login__signInBtn}>
+					<button type='submit' onClick={signIn} className={styles.signInBtn}>
 						sign in
 					</button>
 					<p>
 						by signing in you agree to amazon condition of use and sale.Please see our privacy
 						notice, our cookies notice and our interest based ad notice.
 					</p>
-					<button onClick={register} className={styles.login__registerBtn}>
+					<button onClick={register} className={styles.registerBtn}>
 						create your amazon account
 					</button>
 				</form>

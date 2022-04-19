@@ -12,16 +12,16 @@
 	z-index: 1;
 }
 
-.product__info {
+.info {
 	height: 100px;
 	margin-bottom: 15px;
 	align-self: flex-start;
 }
 
-.product__price {
+.price {
 	margin-top: 5px;
 }
-.product__rating {
+.rating {
 	display: flex;
 }
 
@@ -30,10 +30,6 @@
 	max-height: 200px;
 	object-fit: contain;
 	margin-bottom: 15px;
-}
-
-.fa {
-	color: #f0c14b;
 }
 
 .product > button {
