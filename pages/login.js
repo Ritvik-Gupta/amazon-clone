@@ -4,8 +4,6 @@ import React, { useState } from "react"
 import styles from "../styles/login.module.css"
 import { auth } from "../utils/firebase-config"
 
-const a = styles
-
 const Login = () => {
 	const router = useRouter()
 	const [email, setEmail] = useState("")
@@ -42,7 +40,7 @@ const Login = () => {
 		<div className={styles.login}>
 			<Link href='/'>
 				<img
-					src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png'
+					src='https://t3.ftcdn.net/jpg/04/35/61/80/360_F_435618063_oCjbhHDAd8qu6NXdLzvMGRIpSbTmaxSE.jpg'
 					alt=''
 					className={styles.logo}
 				/>
@@ -64,11 +62,11 @@ const Login = () => {
 						sign in
 					</button>
 					<p>
-						by signing in you agree to amazon condition of use and sale.Please see our privacy
-						notice, our cookies notice and our interest based ad notice.
+						by signing in you agree to GNA condition of use and sale.Please see our privacy notice,
+						our cookies notice and our interest based ad notice.
 					</p>
 					<button onClick={register} className={styles.registerBtn}>
-						create your amazon account
+						create your GNA account
 					</button>
 				</form>
 			</div>

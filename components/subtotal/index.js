@@ -1,11 +1,27 @@
 import React from "react"
 import CurrencyFormat from "react-currency-format"
 import { getBasketTotal } from "../../utils"
+import { database } from "../../utils/firebase-config"
 import { useStateValue } from "../../utils/state-provider"
 import styles from "./styles.module.css"
 
 export const Subtotal = () => {
-	const [{ basket }, dispatch] = useStateValue()
+	const [{ user, basket }, dispatch] = useStateValue()
+
+	const checkoutBasketProducts = async () => {
+		if (user === null) return
+
+		await database
+			.collection("purchase-history")
+			.doc(user.uid)
+			.set({
+				date: Date.now(),
+				totalItems: basket.length,
+				moneySpent: getBasketTotal(basket),
+			})
+
+		dispatch({ type: "RESET_BASKET" })
+	}
 
 	return (
 		<div className={styles.subtotal}>
@@ -28,7 +44,7 @@ export const Subtotal = () => {
 				prefix={"$"}
 			/>
 
-			<button>Proceed to Checkout</button>
+			<button onClick={checkoutBasketProducts}>Proceed to Checkout</button>
 		</div>
 	)
 }

@@ -11,8 +11,6 @@
 	border-bottom: 1px solid lightgray;
 }
 
-.ad {
-	width: 100%;
-	height: 100px;
-	margin-bottom: 10px;
+.right {
+	float: right;
 }

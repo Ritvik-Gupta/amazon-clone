@@ -1,6 +1,6 @@
 .content {
 	opacity: 0;
-	background-color: cornflowerblue;
+	/* background-color: cornflowerblue; */
 	transition-duration: 0.5s;
 	transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }

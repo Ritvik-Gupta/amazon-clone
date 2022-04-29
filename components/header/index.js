@@ -24,8 +24,8 @@ export const Header = () => {
 			<Link href='/'>
 				<img
 					className={styles.logo}
-					src='http://pngimg.com/uploads/amazon/amazon_PNG11.png'
-					alt='amazon logo'
+					src='https://t3.ftcdn.net/jpg/04/35/61/80/360_F_435618063_oCjbhHDAd8qu6NXdLzvMGRIpSbTmaxSE.jpg'
+					alt='gna logo'
 				/>
 			</Link>
 			{/* search box */}
